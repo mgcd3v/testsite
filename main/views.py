@@ -8,7 +8,10 @@ def homepage(request):
  
 def login(request):
     return render(request, 'login.html')
- 
+
+def privacy(request):
+    return render(request, 'privacy.html')
+
 @login_required
 def home(request):
     return render(request, 'home.html')
